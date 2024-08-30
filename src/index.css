@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#tictactoe {
+  margin-left: 20vw;
+  margin-top: calc(50vh - 30vw);
+  width: 60vw;
+  height: 60vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.square {
+  width: 20vw;
+  height: 20vw;
+  background-color: white;
+  border: none;
+
+  text-align: center;
+  font-size: 10em;
+  line-height: 20vw;
+}
+.square {
+  cursor: pointer;
 }
